@@ -1,0 +1,34 @@
+/* Ensure the full viewport is covered with a semi-transparent background */
+.semi-transparent-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black with 50% transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure it's behind the card */
+}
+
+/* Styling for the card */
+.card {
+    background: rgb(255, 255, 255); /* Light background for the card */
+    border: none;
+    border-radius: 30px;
+    padding: 40px;
+    color: navy;
+    box-shadow: 10px 10px 10px rgb(120, 120, 120);
+    z-index: 2; /* Ensure it's above the semi-transparent background */
+    position: relative; /* Ensure positioning works well with z-index */
+}
+.btn{
+    
+    margin-right: 25px;
+}
+
+
+
+
+
